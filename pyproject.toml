@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "textual-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["Catherine Devlin <catherine.devlin@gmail.com>"]
+readme = "README.md"
+packages = [{include = "textual_tutorial"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+textual = "^0.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+stopwatch01 = 'textual_tutorial.stopwatch01:main'
+stopwatch02 = 'textual_tutorial.stopwatch02:main'
+stopwatch04 = 'textual_tutorial.stopwatch04:main'
+stopwatch05 = 'textual_tutorial.stopwatch05:main'
+stopwatch06 = 'textual_tutorial.stopwatch06:main'
+stopwatch = 'textual_tutorial.stopwatch:main'
